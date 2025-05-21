@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "extends": "@gen_epix/typescript-config/tsconfig.frontend.json",
+  "compilerOptions": {
+    "types": [
+      "vitest/globals"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "eslint.config.js",
+    "vite.config.ts",
+    "../client/src/theme"
+  ]
+}

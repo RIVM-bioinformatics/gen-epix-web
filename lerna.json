@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "packages/tools/*",
+    "packages/config/*",
+    "packages/core",
+    "packages/api",
+    "packages/demo-client"
+  ],
+  "version": "0.0.0",
+  "npmClient": "npm"
+}
