@@ -1,6 +1,6 @@
 {
   "name": "@gen_epix/core",
-  "version": "0.0.13",
+  "version": "0.0.15",
   "license": "EUPL-1.2",
   "type": "module",
   "files": [

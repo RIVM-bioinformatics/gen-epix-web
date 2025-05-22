@@ -6,6 +6,7 @@ import dts from 'vite-plugin-dts';
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
 import type { UserConfig as UserConfigVitest } from 'vitest/node';
 import type { UserConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 // https://vitejs.dev/config/
 export default {
@@ -19,6 +20,16 @@ export default {
       insertTypesEntry: true,
       rollupTypes: true,
       tsconfigPath: './tsconfig.json',
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: [
+            './src/@types/**/*.d.ts',
+          ],
+          dest: './',
+        },
+      ],
     }),
   ],
   build: {

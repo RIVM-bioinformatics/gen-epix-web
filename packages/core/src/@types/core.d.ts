@@ -1,3 +1,3 @@
-/// <reference types="@gen_epix/core/src/@types/environment" />
-/// <reference types="@gen_epix/core/src/@types/yup" />
-/// <reference types="@gen_epix/core/src/@types/mui" />
+/// <reference types="./environment" />
+/// <reference types="./yup" />
+/// <reference types="./mui" />

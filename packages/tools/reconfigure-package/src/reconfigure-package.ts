@@ -23,6 +23,7 @@ if (prePost !== 'post' && prePost !== 'pre') {
 
 
 type PackageJson = {
+  name: string;
   files: string[];
   main: string;
   exports: {
@@ -33,14 +34,16 @@ type PackageJson = {
   types: string;
 };
 const gitRootPath = findGitRootPath();
-const packageJsonPath = path.join(gitRootPath, packageDir, 'package.json');
+const packagePath = path.join(gitRootPath, packageDir);
+const packageJsonPath = path.join(packagePath, 'package.json');
 
 if (!existsSync(packageJsonPath)) {
   console.error(`Package.json not found at ${packageJsonPath}`);
   process.exit(1);
 }
-
 const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf-8')) as PackageJson;
+
+
 if (prePost === 'pre') {
   packageJson.files = ['dist'];
   packageJson.main = './dist/index.js';
@@ -51,6 +54,15 @@ if (prePost === 'pre') {
     },
   };
   packageJson.types = './dist/index.d.ts';
+  const packageName = packageJson.name.split('/')?.[1];
+  if (packageName) {
+    const mainTypesPath = path.join(packagePath, 'src', '@types', `${packageName}.d.ts`);
+    if (existsSync(mainTypesPath)) {
+      packageJson.exports['./client'] = {
+        types: `./dist/${packageName}.d.ts`,
+      };
+    }
+  }
 } else {
   packageJson.files = ['src'];
   packageJson.main = './src/index.ts';
