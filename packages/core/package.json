@@ -12,8 +12,8 @@
     "dev": "vite",
     "test": "vitest",
     "test-run": "vitest run --passWithNoTests",
-    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
-    "lint-fix": "eslint . --report-unused-disable-directives --max-warnings 0 --fix",
+    "lint": "eslint ./src --report-unused-disable-directives --max-warnings 0",
+    "lint-fix": "eslint ./src --report-unused-disable-directives --max-warnings 0 --fix",
     "check-types": "tsc --noemit"
   },
   "peerDependencies": {
