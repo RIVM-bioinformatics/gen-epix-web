@@ -1,4 +1,4 @@
-# @gen_epix
+# gen-epix-web
 
 ## SSL
 
