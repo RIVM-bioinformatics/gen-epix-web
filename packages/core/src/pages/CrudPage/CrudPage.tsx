@@ -21,12 +21,6 @@ import { useQuery } from '@tanstack/react-query';
 import isArray from 'lodash/isArray';
 
 import {
-  PermissionType,
-  type CommandName,
-  type Permission,
-} from '@gen_epix/api';
-
-import {
   PageContainer,
   Confirmation,
   Table,
@@ -70,6 +64,11 @@ import {
   ConfigManager,
   RouterManager,
 } from '../../classes';
+import type {
+  CommandName,
+  Permission,
+} from '../../api';
+import { PermissionType } from '../../api';
 
 import { CrudPageEditDialog } from './CrudPageEditDialog';
 import type { CrudPageEditDialogRefMethods } from './CrudPageEditDialog';

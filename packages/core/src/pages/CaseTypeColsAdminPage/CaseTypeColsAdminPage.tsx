@@ -11,12 +11,6 @@ import {
 } from 'yup';
 import { isValid } from 'date-fns';
 
-import type { CaseTypeCol } from '@gen_epix/api';
-import {
-  CommandName,
-  CaseApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -37,6 +31,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { CaseTypeCol } from '../../api';
+import {
+  CaseApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<CaseTypeCol, 'case_type_id' | 'col_id' | 'occurrence' | 'code' | 'rank' | 'label' | 'description' | 'min_value' | 'max_value' | 'min_datetime' | 'max_datetime' | 'min_length' | 'genetic_sequence_case_type_col_id' | 'tree_algorithm_codes' | 'pattern'>;
 

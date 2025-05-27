@@ -11,8 +11,6 @@ import {
 } from 'react';
 import { format } from 'date-fns';
 
-import type { UserInvitation } from '@gen_epix/api';
-
 import { TestIdUtil } from '../../utils';
 import { CopyToClipboardButton } from '../../components';
 import {
@@ -24,6 +22,7 @@ import {
   ConfigManager,
   WindowManager,
 } from '../../classes';
+import type { UserInvitation } from '../../api';
 
 export interface UserInvitationsAdminDetailDialogOpenProps {
   item: UserInvitation;

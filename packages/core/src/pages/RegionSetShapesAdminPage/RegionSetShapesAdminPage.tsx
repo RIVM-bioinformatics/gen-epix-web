@@ -9,12 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type { RegionSetShape } from '@gen_epix/api';
-import {
-  GeoApi,
-  CommandName,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -33,6 +27,11 @@ import {
   useRegionSetOptions,
   useRegionSetsMap,
 } from '../../dataHooks';
+import type { RegionSetShape } from '../../api';
+import {
+  GeoApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<RegionSetShape, 'region_set_id' | 'scale' | 'geo_json'>;
 

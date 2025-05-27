@@ -12,11 +12,6 @@ import {
   string,
 } from 'yup';
 
-import {
-  CaseApi,
-  type CaseSet,
-} from '@gen_epix/api';
-
 import { GenericForm } from '../../form';
 import { Spinner } from '../../ui';
 import {
@@ -35,6 +30,8 @@ import {
 import { useEditMutation } from '../../../hooks';
 import { QUERY_KEY } from '../../../models';
 import { EpiCreateEventDialogSuccessNotificationMessage } from '../EpiCreateEventDialog/EpiCreateEventDialogSuccessNotificationMessage';
+import type { CaseSet } from '../../../api';
+import { CaseApi } from '../../../api';
 
 export type EpiCaseSetFormProps = {
   readonly caseSet: CaseSet;

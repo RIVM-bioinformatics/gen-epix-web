@@ -1,9 +1,8 @@
 import type { TFunction } from 'i18next';
 
-import type { TypedExistsFilter } from '@gen_epix/api';
-
 import type { Filter } from '../../models';
 import { FilterAbstract } from '../abstracts';
+import type { TypedExistsFilter } from '../../api';
 
 export class BooleanFilter extends FilterAbstract<boolean> implements Filter<boolean, boolean> {
   public initialFilterValue: boolean = null;

@@ -1,11 +1,6 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type {
-  UserAccessCasePolicy,
-  UserShareCasePolicy,
-} from '@gen_epix/api';
-
 import {
   useCaseTypeSetsMap,
   useDataCollectionsMap,
@@ -13,6 +8,10 @@ import {
 } from '../../dataHooks';
 import type { UseNameFactory } from '../../models';
 import { DataUtil } from '../../utils';
+import type {
+  UserAccessCasePolicy,
+  UserShareCasePolicy,
+} from '../../api';
 
 export const useUserCasePolicyNameFactory = (): UseNameFactory<UserAccessCasePolicy | UserShareCasePolicy> => {
   const [t] = useTranslation();

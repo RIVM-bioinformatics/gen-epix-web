@@ -10,9 +10,6 @@ import {
   string,
 } from 'yup';
 
-import type { User } from '@gen_epix/api';
-import { OrganizationApi } from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -31,6 +28,8 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { User } from '../../api';
+import { OrganizationApi } from '../../api';
 
 type FormFields = Pick<User, 'email' | 'is_active' | 'roles'>;
 

@@ -1,13 +1,10 @@
 import isFinite from 'lodash/isFinite';
 
-import {
-  ComparisonOperator,
-  type TypedNumberRangeFilter,
-} from '@gen_epix/api';
-
 import type { FilterAbstractKwArgs } from '../abstracts';
 import { FilterAbstract } from '../abstracts';
 import type { Filter } from '../../models';
+import type { TypedNumberRangeFilter } from '../../api';
+import { ComparisonOperator } from '../../api';
 
 export interface NumberRangeFilterKwArgs extends FilterAbstractKwArgs {
   min: number;

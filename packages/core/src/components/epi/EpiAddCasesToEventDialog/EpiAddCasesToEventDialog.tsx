@@ -22,14 +22,6 @@ import {
 } from 'react-hook-form';
 import noop from 'lodash/noop';
 
-import type {
-  Case,
-  CaseSet,
-  CaseSetMember,
-  TypedUuidSetFilter,
-} from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import {
   withDialog,
   type WithDialogRefMethods,
@@ -56,6 +48,13 @@ import {
 import { useEditMutation } from '../../../hooks';
 import { QUERY_KEY } from '../../../models';
 import { EpiCasesAlreadyInCaseSetWarning } from '../EpiCasesAlreadyInCaseSetWarning';
+import type {
+  Case,
+  CaseSet,
+  TypedUuidSetFilter,
+  CaseSetMember,
+} from '../../../api';
+import { CaseApi } from '../../../api';
 
 import { EpiAddCasesToEventDialogSuccessNotificationMessage } from './EpiAddCasesToEventDialogSuccessNotificationMessage';
 

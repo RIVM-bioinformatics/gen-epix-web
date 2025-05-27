@@ -7,7 +7,7 @@ import {
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
-import type { Outage } from '@gen_epix/api';
+import type { Outage } from '../../../api';
 
 type OutageItemProps = {
   readonly outage: Outage;

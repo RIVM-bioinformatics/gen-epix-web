@@ -12,12 +12,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useMemo } from 'react';
 
-import {
-  CaseApi,
-  type Case,
-  type TypedUuidSetFilter,
-} from '@gen_epix/api';
-
 import { QUERY_KEY } from '../../../models';
 import {
   QueryUtil,
@@ -31,6 +25,11 @@ import {
   useCaseSetCategoryMap,
   useCaseSetStatusMap,
 } from '../../../dataHooks';
+import type {
+  Case,
+  TypedUuidSetFilter,
+} from '../../../api';
+import { CaseApi } from '../../../api';
 
 export type EpiCaseCaseSetInfoProps = {
   readonly epiCase: Case;

@@ -9,12 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type { OrganizationAdminPolicy } from '@gen_epix/api';
-import {
-  CommandName,
-  AbacApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -34,6 +28,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { OrganizationAdminPolicy } from '../../api';
+import {
+  AbacApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<OrganizationAdminPolicy, 'is_active' | 'organization_id' | 'user_id'>;
 

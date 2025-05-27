@@ -14,8 +14,6 @@ import {
   Button,
 } from '@mui/material';
 
-import { SystemApi } from '@gen_epix/api';
-
 import { ResponseHandler } from '../ResponseHandler';
 import { PageContainer } from '../PageContainer';
 import { outagesStore } from '../../../stores';
@@ -27,6 +25,7 @@ import {
 import { OutageList } from '../OutageList';
 import { QUERY_KEY } from '../../../models';
 import { WindowManager } from '../../../classes';
+import { SystemApi } from '../../../api';
 
 export const OutageWrapper = ({ children }: PropsWithChildren): ReactNode => {
   const [t] = useTranslation();

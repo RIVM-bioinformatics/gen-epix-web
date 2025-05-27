@@ -5,9 +5,9 @@ import {
 } from 'vitest';
 
 import type {
-  Case,
   GeneticSequence,
-} from '@gen_epix/api';
+  Case,
+} from '../../api';
 
 import { SequenceUtil } from './SequenceUtil';
 
@@ -19,14 +19,14 @@ describe('SequenceUtil', () => {
         { nucleotide_sequence: 'GGTA' },
       ];
 
-      const cases: Partial<Case>[] = [
+      const cases: Case[] = [
         { id: 'case1' },
         { id: 'case2' },
-      ];
+      ] as Case[];
 
       const expectedFastaContent = '>case1\nATCG\n\n>case2\nGGTA\n';
 
-      const fastaContent = SequenceUtil.createFastaContent(sequences, cases as Case[]);
+      const fastaContent = SequenceUtil.createFastaContent(sequences, cases);
       expect(fastaContent).toBe(expectedFastaContent);
     });
 
@@ -35,14 +35,14 @@ describe('SequenceUtil', () => {
         { nucleotide_sequence: 'ATCG' },
       ];
 
-      const cases: Partial<Case>[] = [
+      const cases: Case[] = [
         { id: 'case1' },
         { id: 'case2' },
-      ];
+      ] as Case[];
 
       const expectedFastaContent = '>case1\nATCG\n';
 
-      const fastaContent = SequenceUtil.createFastaContent(sequences, cases as Case[]);
+      const fastaContent = SequenceUtil.createFastaContent(sequences, cases);
       expect(fastaContent).toBe(expectedFastaContent);
     });
 

@@ -6,17 +6,6 @@ import {
 import { t } from 'i18next';
 
 import {
-  DimType,
-  ColType,
-} from '@gen_epix/api';
-import type {
-  CompleteCaseType,
-  CaseTypeCol,
-  CaseTypeDim,
-  Col,
-} from '@gen_epix/api';
-
-import {
   DateFilter,
   FILTER_MODE,
   DEFAULT_FILTER_GROUP,
@@ -38,6 +27,16 @@ import {
   TREE_FILTER_GROUP,
 } from '../EpiCaseTypeUtil';
 import { EpiDataUtil } from '../EpiDataUtil';
+import type {
+  CompleteCaseType,
+  CaseTypeCol,
+  CaseTypeDim,
+  Col,
+} from '../../api';
+import {
+  DimType,
+  ColType,
+} from '../../api';
 
 export class EpiFilterUtil {
 

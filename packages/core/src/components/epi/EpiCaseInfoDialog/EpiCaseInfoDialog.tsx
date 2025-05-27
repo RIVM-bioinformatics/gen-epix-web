@@ -17,12 +17,6 @@ import { useStore } from 'zustand';
 import { useShallow } from 'zustand/shallow';
 import { useQuery } from '@tanstack/react-query';
 
-import type {
-  Case,
-  TypedUuidSetFilter,
-} from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import {
   withDialog,
   type WithDialogRefMethods,
@@ -55,6 +49,11 @@ import {
 } from '../../../dataHooks';
 import type { EpiCaseAbacContextValue } from '../../../context/epiCaseAbac/EpiCaseAbacContext';
 import { EpiCaseAbacProvider } from '../../../context/epiCaseAbac';
+import type {
+  Case,
+  TypedUuidSetFilter,
+} from '../../../api';
+import { CaseApi } from '../../../api';
 
 import { EpiCaseSharingForm } from './EpiCaseSharingForm';
 import { EpiCaseSharingInfo } from './EpiCaseSharingInfo';

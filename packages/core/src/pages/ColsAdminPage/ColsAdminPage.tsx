@@ -10,14 +10,6 @@ import {
   string,
 } from 'yup';
 
-import type { Col } from '@gen_epix/api';
-import {
-  ColType,
-  CaseApi,
-  CommandName,
-} from '@gen_epix/api';
-
-
 import {
   TableUtil,
   TestIdUtil,
@@ -39,6 +31,12 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { Col } from '../../api';
+import {
+  CaseApi,
+  ColType,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<Col, 'dim_id' | 'code_suffix' | 'code' | 'rank_in_dim' | 'label' | 'col_type' | 'concept_set_id' | 'region_set_id' | 'genetic_distance_protocol_id' | 'description'>;
 

@@ -1,8 +1,7 @@
-import type { CompleteUser } from '@gen_epix/api';
-
 import { EventBusAbstract } from '../../abstracts';
 import { WindowManager } from '../WindowManager';
 import { ConfigManager } from '../ConfigManager';
+import type { CompleteUser } from '../../../api';
 
 type Page = {
   pageName: string;

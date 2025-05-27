@@ -8,12 +8,6 @@ import {
   string,
 } from 'yup';
 
-import type { Organization } from '@gen_epix/api';
-import {
-  CommandName,
-  OrganizationApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -27,6 +21,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { Organization } from '../../api';
+import {
+  OrganizationApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<Organization, 'name' | 'legal_entity_code'>;
 

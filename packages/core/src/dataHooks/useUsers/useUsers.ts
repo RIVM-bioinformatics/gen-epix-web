@@ -3,9 +3,6 @@ import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import { useMemo } from 'react';
 
-import type { User } from '@gen_epix/api';
-import { OrganizationApi } from '@gen_epix/api';
-
 import type {
   UseMap,
   UseOptions,
@@ -15,6 +12,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { User } from '../../api';
+import { OrganizationApi } from '../../api';
 
 export const useUsers = (): UseQueryResult<User[]> => {
   return useQuery({

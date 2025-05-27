@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { DimType } from '@gen_epix/api';
-
 import { translateOptions } from '../../hooks';
 import type {
   UseOptions,
   OptionBase,
 } from '../../models';
+import { DimType } from '../../api';
 
 export const dimTypePresentationValues: Record<DimType, string> = {
   [DimType.GEO]: 'GEO',

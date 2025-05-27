@@ -16,11 +16,6 @@ import {
   type BoxProps,
 } from '@mui/material';
 
-import {
-  CaseApi,
-  type Case,
-} from '@gen_epix/api';
-
 import { EpiStoreContext } from '../../../stores';
 import { GenericForm } from '../../form';
 import {
@@ -33,6 +28,8 @@ import { Spinner } from '../../ui';
 import { QUERY_KEY } from '../../../models';
 import { useOrganizations } from '../../../dataHooks';
 import { NotificationManager } from '../../../classes';
+import type { Case } from '../../../api';
+import { CaseApi } from '../../../api';
 
 export type EpiCaseFormProps = {
   readonly epiCase: Case;

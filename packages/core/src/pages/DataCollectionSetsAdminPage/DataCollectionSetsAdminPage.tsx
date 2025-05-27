@@ -9,15 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type {
-  DataCollectionSet,
-  DataCollectionSetMember,
-} from '@gen_epix/api';
-import {
-  OrganizationApi,
-  CommandName,
-} from '@gen_epix/api';
-
 import { CrudPage } from '../CrudPage';
 import {
   TableUtil,
@@ -36,6 +27,14 @@ import {
   useDataCollectionSetMembers,
   useDataCollectionOptions,
 } from '../../dataHooks';
+import type {
+  DataCollectionSet,
+  DataCollectionSetMember,
+} from '../../api';
+import {
+  OrganizationApi,
+  CommandName,
+} from '../../api';
 
 type TableData = DataCollectionSet & { dataCollectionIds: string[] };
 

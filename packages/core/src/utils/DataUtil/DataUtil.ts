@@ -2,17 +2,16 @@ import type { TFunction } from 'i18next';
 import type { UseQueryResult } from '@tanstack/react-query';
 
 import type {
-  CompleteUser,
-  User,
-} from '@gen_epix/api';
-
-import type {
   Loadable,
   UseNameFactory,
   UseMap,
   UseOptions,
 } from '../../models';
 import { StringUtil } from '../StringUtil';
+import type {
+  CompleteUser,
+  User,
+} from '../../api';
 
 export class DataUtil {
   public static getUserDisplayValue(user: User | CompleteUser, t: TFunction<'translation', undefined>): string {

@@ -1,14 +1,13 @@
 import { createContext } from 'react';
 
+import type { OptionBase } from '../../models';
 import type {
+  DataCollection,
   CaseSetDataCollectionLink,
   CaseDataCollectionLink,
   CaseSetRights,
   CaseRights,
-  DataCollection,
-} from '@gen_epix/api';
-
-import type { OptionBase } from '../../models';
+} from '../../api';
 
 export type EpiCaseAbacContextValue = {
   userDataCollections: DataCollection[];

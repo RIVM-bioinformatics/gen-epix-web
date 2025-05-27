@@ -1,7 +1,6 @@
-import type { CaseSet } from '@gen_epix/api';
-
 import { StringUtil } from '../StringUtil';
 import { WindowManager } from '../../classes';
+import type { CaseSet } from '../../api';
 
 export class EpiCaseSetUtil {
   public static createCaseSetLink(caseSet: CaseSet, full?: boolean): string {

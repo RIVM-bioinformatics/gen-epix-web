@@ -1,12 +1,9 @@
-import {
-  CaseApi,
-  type CaseSetMember,
-} from '@gen_epix/api';
-
 import { QueryClientManager } from '../QueryClientManager';
 import type { EpiCaseHasCaseSet } from '../../../models';
 import { QUERY_KEY } from '../../../models';
 import { QueryUtil } from '../../../utils';
+import type { CaseSetMember } from '../../../api';
+import { CaseApi } from '../../../api';
 
 type QueueItem = { caseId: string; promise: Promise<boolean>; resolve: (result: boolean) => void; reject: () => void; isFetching: boolean };
 

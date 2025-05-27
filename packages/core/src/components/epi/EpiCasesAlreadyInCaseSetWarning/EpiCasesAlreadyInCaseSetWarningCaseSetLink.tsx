@@ -6,8 +6,6 @@ import {
 } from 'react';
 import { t } from 'i18next';
 
-import type { CaseSet } from '@gen_epix/api';
-
 import {
   useCaseSetCategoryMap,
   useCaseSetStatusMap,
@@ -19,6 +17,7 @@ import {
 import type { ConfirmationRefMethods } from '../../ui';
 import { EpiCaseSetUtil } from '../../../utils';
 import { RouterManager } from '../../../classes';
+import type { CaseSet } from '../../../api';
 
 export type EpiCasesAlreadyInCaseSetWarningCaseSetLinkProps = {
   readonly caseSet: CaseSet;

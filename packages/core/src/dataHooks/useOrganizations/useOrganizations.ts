@@ -2,9 +2,6 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { Organization } from '@gen_epix/api';
-import { OrganizationApi } from '@gen_epix/api';
-
 import type {
   UseMap,
   UseOptions,
@@ -15,6 +12,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { Organization } from '../../api';
+import { OrganizationApi } from '../../api';
 
 export const useOrganizations = (): UseQueryResult<Organization[]> => {
   return useQuery({

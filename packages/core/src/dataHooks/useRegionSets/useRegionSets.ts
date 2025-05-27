@@ -2,9 +2,6 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { RegionSet } from '@gen_epix/api';
-import { GeoApi } from '@gen_epix/api';
-
 import type {
   UseMap,
   UseOptions,
@@ -14,6 +11,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { RegionSet } from '../../api';
+import { GeoApi } from '../../api';
 
 export const useRegionSets = (): UseQueryResult<RegionSet[]> => {
   return useQuery({

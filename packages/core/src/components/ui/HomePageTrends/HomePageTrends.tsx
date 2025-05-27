@@ -12,16 +12,6 @@ import { useTranslation } from 'react-i18next';
 import round from 'lodash/round';
 import { useQuery } from '@tanstack/react-query';
 
-import type {
-  CaseTypeStat,
-  RetrieveCaseTypeStatsCommand,
-  TypedDatetimeRangeFilter,
-} from '@gen_epix/api';
-import {
-  CaseApi,
-  TypedDatetimeRangeFilterType,
-} from '@gen_epix/api';
-
 import {
   RouterManager,
   ConfigManager,
@@ -37,6 +27,15 @@ import {
   QueryUtil,
   EpiCaseTypeUtil,
 } from '../../../utils';
+import type {
+  CaseTypeStat,
+  TypedDatetimeRangeFilter,
+  RetrieveCaseTypeStatsCommand,
+} from '../../../api';
+import {
+  TypedDatetimeRangeFilterType,
+  CaseApi,
+} from '../../../api';
 
 import { HomagePageTrendCard } from './HomagePageTrendCard';
 

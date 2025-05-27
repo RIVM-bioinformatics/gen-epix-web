@@ -2,15 +2,14 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { ConceptSet } from '@gen_epix/api';
-import { OntologyApi } from '@gen_epix/api';
-
 import type { UseOptions } from '../../models';
 import {
   DataUtil,
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { ConceptSet } from '../../api';
+import { OntologyApi } from '../../api';
 
 export const useConceptSets = (): UseQueryResult<ConceptSet[]> => {
   return useQuery({

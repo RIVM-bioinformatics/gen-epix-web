@@ -9,12 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type { UserAccessCasePolicy } from '@gen_epix/api';
-import {
-  AbacApi,
-  CommandName,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -36,6 +30,11 @@ import {
   QUERY_KEY,
 } from '../../models';
 import { useUserCasePolicyNameFactory } from '../../hooks';
+import type { UserAccessCasePolicy } from '../../api';
+import {
+  AbacApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<
   UserAccessCasePolicy,

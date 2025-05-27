@@ -2,15 +2,14 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { Dim } from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import type { UseOptions } from '../../models';
 import {
   DataUtil,
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { Dim } from '../../api';
+import { CaseApi } from '../../api';
 
 export const useDims = (): UseQueryResult<Dim[]> => {
   return useQuery({

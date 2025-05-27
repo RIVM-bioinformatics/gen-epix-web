@@ -47,11 +47,6 @@ import {
   startOfYear,
 } from 'date-fns';
 
-import {
-  DimType,
-  type CaseTypeCol,
-} from '@gen_epix/api';
-
 import { EPI_ZONE } from '../../../models';
 import {
   EpiCurveUtil,
@@ -69,6 +64,8 @@ import {
   ConfigManager,
   HighlightingManager,
 } from '../../../classes';
+import type { CaseTypeCol } from '../../../api';
+import { DimType } from '../../../api';
 
 echarts.use([TooltipComponent, GridComponent, DataZoomComponent, BarChart, CanvasRenderer]);
 

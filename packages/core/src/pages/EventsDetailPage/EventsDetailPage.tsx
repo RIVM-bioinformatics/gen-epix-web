@@ -5,8 +5,6 @@ import {
   useMemo,
 } from 'react';
 
-import { CaseApi } from '@gen_epix/api';
-
 import {
   EpiDashboard,
   ResponseHandler,
@@ -19,6 +17,7 @@ import {
   useItemQuery,
 } from '../../hooks';
 import { QUERY_KEY } from '../../models';
+import { CaseApi } from '../../api';
 
 export const EventsDetailPage = () => {
   const [t] = useTranslation();

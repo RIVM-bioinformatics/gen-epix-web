@@ -3,7 +3,6 @@ import {
   subDays,
 } from 'date-fns';
 
-import { ColType } from '@gen_epix/api';
 import {
   WindowManager,
   EPI_ZONE,
@@ -12,6 +11,7 @@ import type {
   Config,
   EpiDashboardLayoutConfig,
 } from '@gen_epix/core';
+import { ColType } from '@gen_epix/core/src/api';
 
 import { createTheme } from '../../theme';
 import { ApplicationFooter } from '../../components/ApplicationFooter';

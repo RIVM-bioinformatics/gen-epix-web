@@ -10,13 +10,6 @@ import {
   string,
 } from 'yup';
 
-import type { Dim } from '@gen_epix/api';
-import {
-  DimType,
-  CommandName,
-  CaseApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -31,6 +24,12 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { Dim } from '../../api';
+import {
+  CaseApi,
+  DimType,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<Dim, 'dim_type' | 'code' | 'label' | 'description' | 'rank' | 'col_code_prefix'>;
 

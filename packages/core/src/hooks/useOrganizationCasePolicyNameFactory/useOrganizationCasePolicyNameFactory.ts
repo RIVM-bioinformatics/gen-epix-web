@@ -1,10 +1,5 @@
 import { useMemo } from 'react';
 
-import type {
-  OrganizationAccessCasePolicy,
-  OrganizationShareCasePolicy,
-} from '@gen_epix/api';
-
 import {
   useCaseTypeSetsMap,
   useDataCollectionsMap,
@@ -12,6 +7,10 @@ import {
 } from '../../dataHooks';
 import type { UseNameFactory } from '../../models';
 import { DataUtil } from '../../utils';
+import type {
+  OrganizationAccessCasePolicy,
+  OrganizationShareCasePolicy,
+} from '../../api';
 
 export const useOrganizationCasePolicyNameFactory = (): UseNameFactory<OrganizationAccessCasePolicy | OrganizationShareCasePolicy> => {
   const organizationsMap = useOrganizationMap();

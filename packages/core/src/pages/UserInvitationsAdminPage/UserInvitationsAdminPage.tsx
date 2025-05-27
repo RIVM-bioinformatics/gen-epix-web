@@ -15,13 +15,6 @@ import {
   ListItemText,
 } from '@mui/material';
 
-import type { UserInvitation } from '@gen_epix/api';
-import {
-  AuthApi,
-  CommandName,
-  OrganizationApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -47,6 +40,12 @@ import {
   QUERY_KEY,
 } from '../../models';
 import { AuthorizationManager } from '../../classes';
+import type { UserInvitation } from '../../api';
+import {
+  OrganizationApi,
+  AuthApi,
+  CommandName,
+} from '../../api';
 
 import type { UserInvitationsAdminDetailDialogRefMethods } from './UserInvitationsAdminDetailDialog';
 import { UserInvitationsAdminDetailDialog } from './UserInvitationsAdminDetailDialog';

@@ -16,9 +16,6 @@ import difference from 'lodash/difference';
 import type { BoxProps } from '@mui/material';
 import { Box } from '@mui/material';
 
-import type { CaseSet } from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import {
   type FormFieldDefinition,
   FORM_FIELD_DEFINITION_TYPE,
@@ -33,6 +30,8 @@ import {
 import { Spinner } from '../../ui';
 import { NotificationManager } from '../../../classes';
 import { useEpiCaseAbacContext } from '../../../context';
+import type { CaseSet } from '../../../api';
+import { CaseApi } from '../../../api';
 
 export type EpiCaseSetSharingFormProps = {
   readonly caseSet: CaseSet;

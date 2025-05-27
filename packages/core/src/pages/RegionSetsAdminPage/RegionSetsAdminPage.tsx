@@ -9,12 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type { RegionSet } from '@gen_epix/api';
-import {
-  GeoApi,
-  CommandName,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -28,6 +22,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { RegionSet } from '../../api';
+import {
+  GeoApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<RegionSet, 'name' | 'code' | 'region_code_as_label'>;
 

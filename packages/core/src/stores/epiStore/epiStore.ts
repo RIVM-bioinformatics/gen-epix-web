@@ -8,19 +8,6 @@ import last from 'lodash/last';
 import { persist } from 'zustand/middleware';
 
 import type {
-  Case,
-  PhylogeneticTree,
-  CompleteCaseType,
-  CaseTypeCol,
-  TypedCompositeFilter,
-  CaseQuery,
-} from '@gen_epix/api';
-import {
-  CaseApi,
-  ColType,
-} from '@gen_epix/api';
-
-import type {
   Stratification,
   StratificationLegendaItem,
   EPI_ZONE,
@@ -67,6 +54,18 @@ import {
   createTableStoreActions,
   createTableStorePersistConfiguration,
 } from '../tableStore';
+import type {
+  CaseTypeCol,
+  Case,
+  CompleteCaseType,
+  PhylogeneticTree,
+  TypedCompositeFilter,
+  CaseQuery,
+} from '../../api';
+import {
+  ColType,
+  CaseApi,
+} from '../../api';
 
 interface WidgetData {
   isUnavailable: boolean;

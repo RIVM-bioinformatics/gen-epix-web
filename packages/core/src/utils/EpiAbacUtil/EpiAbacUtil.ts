@@ -1,4 +1,4 @@
-import type { CaseTypeAccessAbac } from '@gen_epix/api';
+import type { CaseTypeAccessAbac } from '../../api';
 
 export class EpiAbacUtil {
   public static createEffectieveColumnAccessRights(

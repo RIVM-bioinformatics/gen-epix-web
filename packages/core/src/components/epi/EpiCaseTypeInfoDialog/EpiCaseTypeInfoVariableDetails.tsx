@@ -12,14 +12,14 @@ import {
 } from '@mui/material';
 import isNumber from 'lodash/isNumber';
 
-import type {
-  CaseTypeDim,
-  CompleteCaseType,
-  Dim,
-} from '@gen_epix/api';
-import { ColType } from '@gen_epix/api';
 
 import { EpiDataUtil } from '../../../utils';
+import type {
+  Dim,
+  CaseTypeDim,
+  CompleteCaseType,
+} from '../../../api';
+import { ColType } from '../../../api';
 
 import { EpiCaseTypeInfoCaseTypeColumnAccessRights } from './EpiCaseTypeInfoCaseTypeColumnAccessRights';
 

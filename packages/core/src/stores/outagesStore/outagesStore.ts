@@ -1,8 +1,7 @@
 import { createStore } from 'zustand';
 
-import type { Outage } from '@gen_epix/api';
-
 import type { CategorizedOutages } from '../../models';
+import type { Outage } from '../../api';
 
 export interface OutagesStoreState {
   visibleOutages: Outage[];

@@ -35,17 +35,6 @@ import round from 'lodash/round';
 import { useStore } from 'zustand';
 import { useQuery } from '@tanstack/react-query';
 
-import {
-  DimType,
-  GeoApi,
-} from '@gen_epix/api';
-import type {
-  CaseTypeCol,
-  Region,
-  RegionSetShape,
-  TypedUuidSetFilter,
-} from '@gen_epix/api';
-
 import { EpiWidget } from '../EpiWidget';
 import {
   EChartsUtil,
@@ -72,6 +61,16 @@ import {
   ConfigManager,
   HighlightingManager,
 } from '../../../classes';
+import type {
+  CaseTypeCol,
+  Region,
+  TypedUuidSetFilter,
+  RegionSetShape,
+} from '../../../api';
+import {
+  DimType,
+  GeoApi,
+} from '../../../api';
 
 echarts.use([GeoComponent, TooltipComponent, LegendComponent, CanvasRenderer, PieChart]);
 

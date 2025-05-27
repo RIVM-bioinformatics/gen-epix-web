@@ -15,14 +15,13 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { useTranslation } from 'react-i18next';
 
-import type { Case } from '@gen_epix/api';
-
 import {
   EpiStoreContext,
   useTableStoreContext,
 } from '../../../stores';
 import { EpiCaseUtil } from '../../../utils';
 import type { TableColumnCaseType } from '../../../models';
+import type { Case } from '../../../api';
 
 export type EpiCaseSummaryProps = {
   readonly epiCase: Case;

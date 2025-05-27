@@ -2,9 +2,6 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { DataCollection } from '@gen_epix/api';
-import { OrganizationApi } from '@gen_epix/api';
-
 import type {
   UseMap,
   UseOptions,
@@ -14,6 +11,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { DataCollection } from '../../api';
+import { OrganizationApi } from '../../api';
 
 export const useDataCollections = (dataCollectionIds?: string[]): UseQueryResult<DataCollection[]> => {
   return useQuery({

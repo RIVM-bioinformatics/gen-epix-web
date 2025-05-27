@@ -10,11 +10,6 @@ import difference from 'lodash/difference';
 import sumBy from 'lodash/sumBy';
 
 import {
-  ColType,
-  type Case,
-} from '@gen_epix/api';
-
-import {
   DateFilter,
   MultiSelectFilter,
   TextFilter,
@@ -46,6 +41,8 @@ import type {
   TableColumnDimension,
 } from '../../models';
 import { FIXED_COLUMN_ID } from '../../models';
+import type { Case } from '../../api';
+import { ColType } from '../../api';
 
 export class TableUtil {
   public static createFiltersFromColumns<TData>(columns: TableColumn<TData>[], baseRows: TData[]): Filters {

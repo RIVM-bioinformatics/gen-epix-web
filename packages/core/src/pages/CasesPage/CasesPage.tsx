@@ -15,16 +15,6 @@ import {
 } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
-import type {
-  CaseTypeSet,
-  CaseTypeSetCategory,
-  CaseTypeStat,
-} from '@gen_epix/api';
-import {
-  CaseApi,
-  CaseTypeSetCategoryPurpose,
-} from '@gen_epix/api';
-
 import {
   PageContainer,
   Table,
@@ -60,6 +50,15 @@ import {
   ConfigManager,
   RouterManager,
 } from '../../classes';
+import type {
+  CaseTypeStat,
+  CaseTypeSet,
+  CaseTypeSetCategory,
+} from '../../api';
+import {
+  CaseApi,
+  CaseTypeSetCategoryPurpose,
+} from '../../api';
 
 type Row = {
   id: string;

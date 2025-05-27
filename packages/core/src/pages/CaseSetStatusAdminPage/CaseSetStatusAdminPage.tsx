@@ -8,12 +8,6 @@ import {
   string,
 } from 'yup';
 
-import type { CaseSetStatus } from '@gen_epix/api';
-import {
-  CommandName,
-  CaseApi,
-} from '@gen_epix/api';
-
 import { CrudPage } from '../CrudPage';
 import {
   TableUtil,
@@ -27,6 +21,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { CaseSetStatus } from '../../api';
+import {
+  CaseApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<CaseSetStatus, 'name' | 'description'>;
 

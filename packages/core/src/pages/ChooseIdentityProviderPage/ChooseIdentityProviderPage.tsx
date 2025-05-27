@@ -7,14 +7,13 @@ import type { MouseEvent } from 'react';
 import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type { IdentityProvider } from '@gen_epix/api';
-
 import { PageContainer } from '../../components';
 import {
   AuthenticationManager,
   ConfigManager,
 } from '../../classes';
 import { TestIdUtil } from '../../utils';
+import type { IdentityProvider } from '../../api';
 
 export type ChooseIdentityProviderPageProps = {
   readonly identityProviders: IdentityProvider[];

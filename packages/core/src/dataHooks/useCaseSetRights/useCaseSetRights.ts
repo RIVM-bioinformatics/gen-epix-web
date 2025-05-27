@@ -4,14 +4,13 @@ import {
 } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { CaseSetRights } from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import { QUERY_KEY } from '../../models';
 import {
   QueryUtil,
   DataUtil,
 } from '../../utils';
+import type { CaseSetRights } from '../../api';
+import { CaseApi } from '../../api';
 
 export const useCaseSetRights = (caseSetIds: string[]): UseQueryResult<CaseSetRights[]> => {
   const queryResult = useQuery({

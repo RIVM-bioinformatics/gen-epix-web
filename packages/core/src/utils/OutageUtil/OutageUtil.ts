@@ -1,9 +1,8 @@
 import { addHours } from 'date-fns';
 
-import type { Outage } from '@gen_epix/api';
-
 import type { CategorizedOutages } from '../../models';
 import { ConfigManager } from '../../classes';
+import type { Outage } from '../../api';
 
 export class OutageUtil {
   public static getCategorizedOutages(outages: Outage[]): CategorizedOutages {

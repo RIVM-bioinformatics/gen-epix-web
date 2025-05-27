@@ -2,9 +2,6 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { Disease } from '@gen_epix/api';
-import { OntologyApi } from '@gen_epix/api';
-
 import type {
   UseMap,
   UseOptions,
@@ -14,6 +11,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { Disease } from '../../api';
+import { OntologyApi } from '../../api';
 
 export const useDiseases = (): UseQueryResult<Disease[]> => {
   return useQuery({

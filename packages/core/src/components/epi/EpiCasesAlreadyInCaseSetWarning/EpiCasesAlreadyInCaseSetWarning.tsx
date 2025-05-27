@@ -13,21 +13,20 @@ import uniq from 'lodash/uniq';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import {
-  CaseApi,
-  LogLevel,
-} from '@gen_epix/api';
-import type {
-  Case,
-  CaseSet,
-  TypedUuidSetFilter,
-} from '@gen_epix/api';
-
 import { QUERY_KEY } from '../../../models';
 import { QueryUtil } from '../../../utils';
 import { ResponseHandler } from '../../ui';
 import { EpiCaseSummary } from '../EpiCaseSummary';
 import { LogManager } from '../../../classes';
+import type {
+  Case,
+  TypedUuidSetFilter,
+  CaseSet,
+} from '../../../api';
+import {
+  CaseApi,
+  LogLevel,
+} from '../../../api';
 
 import { EpiCasesAlreadyInCaseSetWarningCaseSetLink } from './EpiCasesAlreadyInCaseSetWarningCaseSetLink';
 

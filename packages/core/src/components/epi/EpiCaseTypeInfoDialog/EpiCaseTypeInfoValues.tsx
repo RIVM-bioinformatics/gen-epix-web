@@ -5,12 +5,9 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import {
-  DimType,
-  type CompleteCaseType,
-} from '@gen_epix/api';
-
 import { EpiCaseTypeUtil } from '../../../utils';
+import type { CompleteCaseType } from '../../../api';
+import { DimType } from '../../../api';
 
 import { EpiCaseTypeInfoVariableDetails } from './EpiCaseTypeInfoVariableDetails';
 

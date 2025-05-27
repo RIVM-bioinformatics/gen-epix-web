@@ -2,9 +2,6 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { CaseTypeCol } from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import type {
   UseMap,
   UseNameFactory,
@@ -16,6 +13,8 @@ import {
 } from '../../utils';
 import { useCaseTypeMap } from '../useCaseTypes';
 import { QUERY_KEY } from '../../models';
+import type { CaseTypeCol } from '../../api';
+import { CaseApi } from '../../api';
 
 export const useCaseTypeCols = (): UseQueryResult<CaseTypeCol[]> => {
   return useQuery({

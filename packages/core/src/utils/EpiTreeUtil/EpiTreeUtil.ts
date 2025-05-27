@@ -5,9 +5,6 @@ import last from 'lodash/last';
 import round from 'lodash/round';
 import type { Theme } from '@mui/material';
 
-import type { CompleteCaseType } from '@gen_epix/api';
-import { ColType } from '@gen_epix/api';
-
 import { DataUrlUtil } from '../DataUrlUtil';
 import type {
   Stratification,
@@ -18,6 +15,8 @@ import { NumberUtil } from '../NumberUtil';
 import { EpiDataUtil } from '../EpiDataUtil';
 import { ColorUtil } from '../ColorUtil';
 import { ConfigManager } from '../../classes';
+import type { CompleteCaseType } from '../../api';
+import { ColType } from '../../api';
 
 type SanitizeResult = { node: TreeNode; nodesToMove: TreeNode[] };
 

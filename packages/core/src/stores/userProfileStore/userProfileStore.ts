@@ -4,10 +4,9 @@ import {
   createJSONStorage,
 } from 'zustand/middleware';
 
-import type { IdentityProvider } from '@gen_epix/api';
-
 import type { EpiDashboardLayoutUserConfig } from '../../models';
 import { EpiDashboardUtil } from '../../utils';
+import type { IdentityProvider } from '../../api';
 
 export type EpiDashboardGeneralSettings = {
   isHighlightingEnabled: boolean;

@@ -21,17 +21,6 @@ import { useShallow } from 'zustand/shallow';
 import { useDebouncedCallback } from 'use-debounce';
 import type { ListRange } from 'react-virtuoso';
 
-import type {
-  CaseSet,
-  Case,
-  CaseTypeCol,
-} from '@gen_epix/api';
-import {
-  ColType,
-  CommandName,
-  PermissionType,
-} from '@gen_epix/api';
-
 import {
   Subject,
   AuthorizationManager,
@@ -62,6 +51,16 @@ import type { TableRef } from '../../ui';
 import { Table } from '../../ui';
 import { EpiLegendaItem } from '../EpiLegendaItem';
 import { UseColumnsMenu } from '../../../hooks';
+import type {
+  CaseSet,
+  Case,
+  CaseTypeCol,
+} from '../../../api';
+import {
+  ColType,
+  CommandName,
+  PermissionType,
+} from '../../../api';
 
 export type EpiListProps = {
   readonly linkedScrollSubject: Subject<EpiLinkedScrollSubjectValue>;

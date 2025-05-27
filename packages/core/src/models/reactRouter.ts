@@ -4,7 +4,7 @@ import type {
   NonIndexRouteObject,
 } from 'react-router';
 
-import type { Permission } from '@gen_epix/api';
+import type { Permission } from '../api';
 
 export type UseLoaderData<T> = {
   data: T;

@@ -14,12 +14,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useQuery } from '@tanstack/react-query';
 
-import type {
-  CaseSet,
-  TypedUuidSetFilter,
-} from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import {
   withDialog,
   type WithDialogRefMethods,
@@ -53,6 +47,11 @@ import {
 } from '../../../dataHooks';
 import { EpiCaseAbacProvider } from '../../../context';
 import type { EpiCaseAbacContextValue } from '../../../context';
+import type {
+  CaseSet,
+  TypedUuidSetFilter,
+} from '../../../api';
+import { CaseApi } from '../../../api';
 
 import { EpiCaseSetContent } from './EpiCaseSetContent';
 import { EpiCaseSetForm } from './EpiCaseSetForm';

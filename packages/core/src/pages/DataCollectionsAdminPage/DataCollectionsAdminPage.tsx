@@ -8,12 +8,6 @@ import {
   string,
 } from 'yup';
 
-import type { DataCollection } from '@gen_epix/api';
-import {
-  CommandName,
-  OrganizationApi,
-} from '@gen_epix/api';
-
 import { CrudPage } from '../CrudPage';
 import {
   TableUtil,
@@ -27,6 +21,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { DataCollection } from '../../api';
+import {
+  OrganizationApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<DataCollection, 'name' | 'description'>;
 

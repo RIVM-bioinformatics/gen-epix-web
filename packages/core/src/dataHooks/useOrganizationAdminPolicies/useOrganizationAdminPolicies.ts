@@ -3,9 +3,6 @@ import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type { OrganizationAdminPolicy } from '@gen_epix/api';
-import { AbacApi } from '@gen_epix/api';
-
 import type {
   UseNameFactory,
   UseMap,
@@ -18,6 +15,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { OrganizationAdminPolicy } from '../../api';
+import { AbacApi } from '../../api';
 
 export const useOrganizationAdminPolicies = (): UseQueryResult<OrganizationAdminPolicy[]> => {
   return useQuery({

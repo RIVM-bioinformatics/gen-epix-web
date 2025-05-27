@@ -12,8 +12,6 @@ import {
 import { isRouteErrorResponse } from 'react-router-dom';
 import { isAxiosError } from 'axios';
 
-import { LogLevel } from '@gen_epix/api';
-
 import { AxiosUtil } from '../../../utils';
 import {
   AuthenticationManager,
@@ -23,6 +21,7 @@ import {
   PageEventBusManager,
   ConfigManager,
 } from '../../../classes';
+import { LogLevel } from '../../../api';
 
 export type GenericErrorMessageProps = {
   readonly error?: unknown;

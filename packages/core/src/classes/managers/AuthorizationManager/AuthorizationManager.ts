@@ -1,8 +1,7 @@
 import type {
   CompleteUser,
   Permission,
-} from '@gen_epix/api';
-
+} from '../../../api';
 import type { MyNonIndexRouteObject } from '../../../models';
 import { PageEventBusManager } from '../PageEventBusManager';
 

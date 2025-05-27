@@ -5,10 +5,9 @@ import {
 } from '@mui/material';
 import { useCallback } from 'react';
 
-import type { CaseSet } from '@gen_epix/api';
-
 import { EpiCaseSetUtil } from '../../../utils';
 import { RouterManager } from '../../../classes';
+import type { CaseSet } from '../../../api';
 
 export type EpiAddCasesToEventDialogSuccessNotificationMessageProps = {
   readonly caseSet: CaseSet;

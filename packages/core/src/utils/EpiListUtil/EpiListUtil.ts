@@ -5,14 +5,13 @@ import {
 } from 'xlsx';
 import sumBy from 'lodash/sumBy';
 
-import {
-  type Case,
-  type CompleteCaseType,
-} from '@gen_epix/api';
-
 import { DataUrlUtil } from '../DataUrlUtil';
 import { EpiCaseTypeUtil } from '../EpiCaseTypeUtil';
 import { EpiCaseUtil } from '../EpiCaseUtil';
+import type {
+  Case,
+  CompleteCaseType,
+} from '../../api';
 
 export class EpiListUtil {
   public static downloadAsCsv(cases: Case[], completeCaseType: CompleteCaseType, name: string): void {

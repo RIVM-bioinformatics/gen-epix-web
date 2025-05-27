@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Role } from '@gen_epix/api';
-
 import type {
   UseOptions,
   OptionBase,
 } from '../../models';
 import { translateOptions } from '../../hooks';
+import { Role } from '../../api';
 
 
 export const rolePresentationValues: Record<Role, string> = {

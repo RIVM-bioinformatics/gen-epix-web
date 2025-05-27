@@ -5,7 +5,7 @@ import type {
 } from '@mui/material';
 import type { TFunction } from 'i18next';
 
-import type { ColType } from '@gen_epix/api';
+import type { ColType } from '../api';
 
 import type { EpiDashboardLayoutConfig } from './epi';
 

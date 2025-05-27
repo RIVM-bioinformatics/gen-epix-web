@@ -1,11 +1,6 @@
 import type { TFunction } from 'i18next';
 
 import type {
-  FiltersInner,
-  Case,
-} from '@gen_epix/api';
-
-import type {
   DateFilter,
   GeoFilter,
   MultiSelectFilter,
@@ -15,6 +10,10 @@ import type {
   TreeFilter,
   BooleanFilter,
 } from '../classes';
+import type {
+  Case,
+  FiltersInner,
+} from '../api';
 
 export interface Filter<TFilterValue, TRowValue> {
   initialFilterValue: TFilterValue;

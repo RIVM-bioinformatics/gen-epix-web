@@ -11,8 +11,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import last from 'lodash/last';
 
-import { OrganizationApi } from '@gen_epix/api';
-
 import { ResponseHandler } from '../ResponseHandler';
 import { PageContainer } from '../PageContainer';
 import type { MyNonIndexRouteObject } from '../../../models';
@@ -22,6 +20,7 @@ import {
   TestIdUtil,
 } from '../../../utils';
 import { AuthorizationManager } from '../../../classes';
+import { OrganizationApi } from '../../../api';
 
 export const AuthorizationWrapper = ({ children }: PropsWithChildren): ReactNode => {
   const [t] = useTranslation();

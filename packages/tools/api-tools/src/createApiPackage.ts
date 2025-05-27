@@ -17,7 +17,7 @@ import {
 } from '@gen_epix/tools-lib';
 
 const sourcePath = path.join(findPackageRootPath(), 'generated-api');
-const destinationPath = path.join(findGitRootPath(), 'packages', 'api', 'src');
+const destinationPath = path.join(findGitRootPath(), 'packages', 'core', 'src', 'api');
 
 if (!pathExistsSync(sourcePath)) {
   throw Error('API source path does not exist');

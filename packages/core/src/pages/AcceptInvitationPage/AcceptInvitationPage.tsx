@@ -11,8 +11,6 @@ import {
   useState,
 } from 'react';
 
-import { AuthApi } from '@gen_epix/api';
-
 import {
   ResponseHandler,
   PageContainer,
@@ -25,6 +23,7 @@ import {
   ConfigManager,
   WindowManager,
 } from '../../classes';
+import { AuthApi } from '../../api';
 
 export const AcceptInvitationPage = () => {
   const { token } = useParams();

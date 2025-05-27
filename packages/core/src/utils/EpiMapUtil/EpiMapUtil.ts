@@ -2,13 +2,11 @@ import max from 'lodash/max';
 import min from 'lodash/min';
 import round from 'lodash/round';
 
+import { ConfigManager } from '../../classes';
 import type {
   Case,
   Region,
-} from '@gen_epix/api';
-
-import { ConfigManager } from '../../classes';
-
+} from '../../api';
 
 export type RegionStatistics = {
   statisticsPerRegion: Record<string, { rows: Case[]; region: Region; numCases: number }>;

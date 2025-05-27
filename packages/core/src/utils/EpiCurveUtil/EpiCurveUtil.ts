@@ -13,15 +13,14 @@ import {
   isValid,
 } from 'date-fns';
 
-import { ColType } from '@gen_epix/api';
-import type {
-  Case,
-  CaseTypeCol,
-  CompleteCaseType,
-} from '@gen_epix/api';
-
 import { EpiCaseTypeUtil } from '../EpiCaseTypeUtil';
 import { EpiFilterUtil } from '../EpiFilterUtil';
+import type {
+  Case,
+  CompleteCaseType,
+  CaseTypeCol,
+} from '../../api';
+import { ColType } from '../../api';
 
 interface Item {
   date: Date;

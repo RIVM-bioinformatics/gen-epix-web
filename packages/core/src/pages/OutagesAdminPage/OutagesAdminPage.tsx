@@ -10,16 +10,6 @@ import {
 } from 'yup';
 import { isValid } from 'date-fns';
 
-import type {
-  Outage,
-  Permission,
-} from '@gen_epix/api';
-import {
-  CommandName,
-  PermissionType,
-  SystemApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -33,6 +23,15 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type {
+  Outage,
+  Permission,
+} from '../../api';
+import {
+  SystemApi,
+  CommandName,
+  PermissionType,
+} from '../../api';
 
 type FormFields = Pick<Outage, 'description' | 'active_from' | 'active_to' | 'visible_from' | 'visible_to' | 'is_active' | 'is_visible'>;
 

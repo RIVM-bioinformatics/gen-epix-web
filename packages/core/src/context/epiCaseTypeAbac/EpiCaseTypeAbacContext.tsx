@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
 import type {
-  CaseTypeAccessAbac,
   DataCollection,
-} from '@gen_epix/api';
+  CaseTypeAccessAbac,
+} from '../../api';
 
 export type EpiCaseTypeAbacContextValue = {
   userDataCollections: DataCollection[];

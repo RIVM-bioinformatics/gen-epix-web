@@ -1,17 +1,17 @@
 import type {
   Case,
+  ColType,
   CaseTypeCol,
   Col,
-  ColType,
-  Concept,
-  ConceptSet,
-  DataCollection,
   GeneticDistanceProtocol,
-  Organization,
-  Region,
-  RegionSet,
   TreeAlgorithm,
-} from '@gen_epix/api';
+  Organization,
+  ConceptSet,
+  Concept,
+  RegionSet,
+  Region,
+  DataCollection,
+} from '../api';
 
 export type CaseTypeRowValue = {
   raw: string;

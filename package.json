@@ -21,12 +21,10 @@
     "build": "npm run build -w @gen_epix/core",
     "build-tools": "npm run build -w @gen_epix/tools-lib && npm run build -w @gen_epix/reconfigure-package && npm run build -w @gen_epix/generate-license-manifest && npm run build -w @gen_epix/oidc-mock-server",
     "clean": "lerna clean && rm -fr node_modules",
-    "process-api": "npm run process-api -w @gen_epix/api-tools && npm run build -w @gen_epix/api",
     "validate-all": "npm run lint && npm run check-types && npm run test-run",
     "generate-license-manifest": "generate-license-manifest packages/demo-client/public",
     "start-oidc-mock-server": "nodemon --watch ./oidc-mock-server.config.json ./node_modules/.bin/oidc-mock-server",
-    "publish-core": "npm run build -w @gen_epix/core && reconfigure-package packages/core pre && npm publish --access=public -w @gen_epix/core && reconfigure-package packages/core post",
-    "publish-api": "npm run build -w @gen_epix/api && reconfigure-package packages/api pre && npm publish --access=public -w @gen_epix/api && reconfigure-package packages/api post"
+    "publish-core": "npm run build -w @gen_epix/core && reconfigure-package packages/core pre && npm publish --access=public -w @gen_epix/core && reconfigure-package packages/core post"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",

@@ -2,14 +2,13 @@ import intersection from 'lodash/intersection';
 import isArray from 'lodash/isArray';
 import isNumber from 'lodash/isNumber';
 
-import type { TypedStringSetFilter } from '@gen_epix/api';
-
 import type {
   AutoCompleteOption,
   Filter,
 } from '../../models';
 import type { FilterAbstractKwArgs } from '../abstracts';
 import { FilterAbstract } from '../abstracts';
+import type { TypedStringSetFilter } from '../../api';
 
 export interface MultiSelectFilterKwArgs extends FilterAbstractKwArgs {
   options: AutoCompleteOption[];

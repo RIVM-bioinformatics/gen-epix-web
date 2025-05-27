@@ -21,8 +21,6 @@ import { produce } from 'immer';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import { useStoreWithEqualityFn } from 'zustand/traditional';
 
-import type { CaseTypeCol } from '@gen_epix/api';
-
 import type { EpiContextMenuConfigWithAnchor } from '../EpiContextMenu';
 import { EpiContextMenu } from '../EpiContextMenu';
 import type {
@@ -40,6 +38,7 @@ import {
   ConfigManager,
   HighlightingManager,
 } from '../../../classes';
+import type { CaseTypeCol } from '../../../api';
 
 export const EpiStratification = () => {
   const [t] = useTranslation();

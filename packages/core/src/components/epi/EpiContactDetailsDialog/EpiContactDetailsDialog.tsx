@@ -13,8 +13,6 @@ import {
 } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
-import { CaseApi } from '@gen_epix/api';
-
 import {
   withDialog,
   type WithDialogRefMethods,
@@ -24,6 +22,7 @@ import {
   Spinner,
   GenericErrorMessage,
 } from '../../ui';
+import { CaseApi } from '../../../api';
 
 export interface EpiContactDetailsDialogOpenProps {
   contactId: string;

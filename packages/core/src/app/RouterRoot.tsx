@@ -13,11 +13,6 @@ import { AuthProvider } from 'react-oidc-context';
 import { UserManager } from 'oidc-client-ts';
 
 import {
-  LogLevel,
-  AuthApi,
-} from '@gen_epix/api';
-
-import {
   AuthenticationWrapper,
   AuthorizationWrapper,
   OutageWrapper,
@@ -41,6 +36,10 @@ import {
   LogManager,
   NavigationHistoryManager,
 } from '../classes';
+import {
+  AuthApi,
+  LogLevel,
+} from '../api';
 
 export const RouterRoot = () => {
   const location = useLocation();

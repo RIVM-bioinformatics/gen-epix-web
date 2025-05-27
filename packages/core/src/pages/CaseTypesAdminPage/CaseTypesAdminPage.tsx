@@ -8,12 +8,6 @@ import {
   string,
 } from 'yup';
 
-import type { CaseType } from '@gen_epix/api';
-import {
-  CommandName,
-  CaseApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -32,6 +26,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { CaseType } from '../../api';
+import {
+  CaseApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<CaseType, 'name' | 'etiological_agent_id' | 'disease_id'>;
 

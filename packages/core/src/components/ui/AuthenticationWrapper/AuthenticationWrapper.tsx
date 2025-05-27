@@ -14,8 +14,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useAuth } from 'react-oidc-context';
 
-import { LogLevel } from '@gen_epix/api';
-
 import type { AuthState } from '../../../models';
 import { PageContainer } from '../PageContainer';
 import type { ConsentDialogRefMethods } from '../ConsentDialog';
@@ -29,6 +27,7 @@ import {
   WindowManager,
 } from '../../../classes';
 import { TestIdUtil } from '../../../utils';
+import { LogLevel } from '../../../api';
 
 export const AuthenticationWrapper = ({ children }: PropsWithChildren) => {
   const [t] = useTranslation();

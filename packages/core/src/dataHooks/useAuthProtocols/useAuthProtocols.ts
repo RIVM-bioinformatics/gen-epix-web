@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { AuthProtocol } from '@gen_epix/api';
-
 import { translateOptions } from '../../hooks';
 import type {
   UseOptions,
   OptionBase,
 } from '../../models';
+import { AuthProtocol } from '../../api';
 
 export const authProtocolPresentationValues: Record<AuthProtocol, string> = {
   [AuthProtocol.OAUTH2]: 'OAUTH2',

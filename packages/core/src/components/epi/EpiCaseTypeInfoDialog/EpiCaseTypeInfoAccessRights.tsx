@@ -12,10 +12,9 @@ import {
 } from '@mui/material';
 import { t } from 'i18next';
 
-import { type CompleteCaseType } from '@gen_epix/api';
-
 import { EpiCaseTypeUtil } from '../../../utils';
 import { useEpiCaseTypeAbacContext } from '../../../context';
+import type { CompleteCaseType } from '../../../api';
 
 export type EpiCaseTypeInfoAccessRightsProps = {
   readonly completeCaseType: CompleteCaseType;

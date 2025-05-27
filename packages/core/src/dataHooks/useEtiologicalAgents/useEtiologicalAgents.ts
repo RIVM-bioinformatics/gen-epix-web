@@ -4,9 +4,6 @@ import {
 } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
-import type { EtiologicalAgent } from '@gen_epix/api';
-import { OntologyApi } from '@gen_epix/api';
-
 import type {
   UseMap,
   UseOptions,
@@ -16,6 +13,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { EtiologicalAgent } from '../../api';
+import { OntologyApi } from '../../api';
 
 export const useEtiologicalAgents = (): UseQueryResult<EtiologicalAgent[]> => {
   return useQuery({

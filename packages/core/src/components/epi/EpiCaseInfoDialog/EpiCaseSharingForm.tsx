@@ -18,9 +18,6 @@ import {
   type BoxProps,
 } from '@mui/material';
 
-import type { Case } from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import {
   FORM_FIELD_DEFINITION_TYPE,
   type FormFieldDefinition,
@@ -34,6 +31,8 @@ import {
 import { Spinner } from '../../ui';
 import { NotificationManager } from '../../../classes';
 import { useEpiCaseAbacContext } from '../../../context/epiCaseAbac';
+import type { Case } from '../../../api';
+import { CaseApi } from '../../../api';
 
 export type EpiCaseSharingFormProps = {
   readonly epiCase: Case;

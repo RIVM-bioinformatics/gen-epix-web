@@ -9,19 +9,6 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import difference from 'lodash/difference';
 import intersection from 'lodash/intersection';
 
-import {
-  CaseApi,
-  ColType,
-} from '@gen_epix/api';
-import type {
-  Case,
-  CaseDataCollectionLink,
-  CaseTypeCol,
-  Col,
-  CompleteCaseType,
-  Organization,
-} from '@gen_epix/api';
-
 import { EpiCaseTypeUtil } from '../EpiCaseTypeUtil';
 import type {
   FormFieldDefinition,
@@ -38,6 +25,18 @@ import {
 } from '../../classes';
 import { EpiAbacUtil } from '../EpiAbacUtil';
 import { QueryUtil } from '../QueryUtil';
+import type {
+  CaseDataCollectionLink,
+  CompleteCaseType,
+  Organization,
+  Case,
+  CaseTypeCol,
+  Col,
+} from '../../api';
+import {
+  CaseApi,
+  ColType,
+} from '../../api';
 
 export class EpiCaseUtil {
   public static async applyDataCollectionLinks(kwArgs: { caseSetId?: string; caseSetDataCollectionIds: string[]; caseIds?: string[] }): Promise<void> {

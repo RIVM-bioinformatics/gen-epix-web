@@ -21,13 +21,6 @@ import {
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import {
-  type CompleteCaseType,
-  type CaseSet,
-  type Case,
-  CaseApi,
-} from '@gen_epix/api';
-
-import {
   withDialog,
   type WithDialogRefMethods,
   type WithDialogRenderProps,
@@ -60,6 +53,12 @@ import type {
   FormFieldDefinition,
 } from '../../../models';
 import { EpiEventBusManager } from '../../../classes';
+import type {
+  Case,
+  CompleteCaseType,
+  CaseSet,
+} from '../../../api';
+import { CaseApi } from '../../../api';
 
 import { EpiCreateEventDialogSuccessNotificationMessage } from './EpiCreateEventDialogSuccessNotificationMessage';
 

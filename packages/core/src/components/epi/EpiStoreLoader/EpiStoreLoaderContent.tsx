@@ -6,11 +6,6 @@ import {
 import { useStore } from 'zustand';
 import { useShallow } from 'zustand/shallow';
 
-import type {
-  CompleteCaseType,
-  CaseSet,
-} from '@gen_epix/api';
-
 import type { TableColumnDimension } from '../../../models';
 import {
   createEpiStore,
@@ -21,6 +16,10 @@ import {
   EpiCaseTypeUtil,
   StringUtil,
 } from '../../../utils';
+import type {
+  CompleteCaseType,
+  CaseSet,
+} from '../../../api';
 
 type EpiStoreInitializerProps = PropsWithChildren<{
   readonly completeCaseType: CompleteCaseType;

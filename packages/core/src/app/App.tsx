@@ -8,8 +8,6 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from 'react-error-boundary';
 import { RouterProvider } from 'react-router-dom';
 
-import { BaseAPI } from '@gen_epix/api';
-
 import {
   AuthenticationManager,
   BackendVersionManager,
@@ -19,6 +17,7 @@ import {
   RouterManager,
 } from '../classes';
 import { ErrorPage } from '../pages';
+import { BaseAPI } from '../api';
 
 export const App = () => {
   const { config } = ConfigManager.instance;

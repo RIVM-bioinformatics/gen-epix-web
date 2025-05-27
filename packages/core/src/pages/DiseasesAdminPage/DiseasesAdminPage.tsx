@@ -8,12 +8,6 @@ import {
   string,
 } from 'yup';
 
-import type { Disease } from '@gen_epix/api';
-import {
-  OntologyApi,
-  CommandName,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -27,6 +21,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { Disease } from '../../api';
+import {
+  OntologyApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Omit<Disease, 'id'>;
 

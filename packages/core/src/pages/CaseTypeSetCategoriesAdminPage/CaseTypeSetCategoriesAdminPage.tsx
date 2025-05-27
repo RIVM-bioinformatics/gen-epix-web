@@ -9,12 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type { CaseTypeSetCategory } from '@gen_epix/api';
-import {
-  CommandName,
-  CaseApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -28,6 +22,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { CaseTypeSetCategory } from '../../api';
+import {
+  CaseApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<CaseTypeSetCategory, 'name' | 'rank' | 'description'>;
 

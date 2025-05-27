@@ -1,7 +1,6 @@
-import type { TypedRegexFilter } from '@gen_epix/api';
-
 import { FilterAbstract } from '../abstracts';
 import type { Filter } from '../../models';
+import type { TypedRegexFilter } from '../../api';
 
 export class TextFilter extends FilterAbstract<string> implements Filter<string, string> {
   public initialFilterValue: string = '';

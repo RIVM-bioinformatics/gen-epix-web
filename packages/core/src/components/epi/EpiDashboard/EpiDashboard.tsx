@@ -16,8 +16,6 @@ import { useStore } from 'zustand';
 import { useShallow } from 'zustand/shallow';
 import InfoIcon from '@mui/icons-material/Info';
 
-import type { CaseSet } from '@gen_epix/api';
-
 import CollectionIcon from '../../../assets/icons/CollectionIcon.svg?react';
 import {
   Subject,
@@ -79,6 +77,7 @@ import {
   EpiSequenceDownloadDialog,
   type EpiSequenceDownloadDialogRefMethods,
 } from '../EpiSequenceDownloadDialog';
+import type { CaseSet } from '../../../api';
 
 import type { ForwardRefEpiDashboardLayoutRendererRefMethods } from './EpiDashboardLayoutRenderer';
 import { EpiDashboardLayoutRenderer } from './EpiDashboardLayoutRenderer';

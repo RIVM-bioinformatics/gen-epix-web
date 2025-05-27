@@ -11,14 +11,6 @@ import { useStore } from 'zustand';
 import { useShallow } from 'zustand/shallow';
 import { useQuery } from '@tanstack/react-query';
 
-import type {
-  Case,
-  CaseSet,
-  CaseSetMember,
-  TypedUuidSetFilter,
-} from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import {
   withDialog,
   type WithDialogRefMethods,
@@ -36,6 +28,13 @@ import {
 } from '../../ui';
 import { useDeleteMutation } from '../../../hooks';
 import { QUERY_KEY } from '../../../models';
+import type {
+  Case,
+  CaseSet,
+  TypedUuidSetFilter,
+  CaseSetMember,
+} from '../../../api';
+import { CaseApi } from '../../../api';
 
 export interface EpiRemoveCasesFromEventDialogOpenProps {
   rows: Case[];

@@ -1,10 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import {
-  CommandName,
-  PermissionType,
-} from '@gen_epix/api';
-
-import {
   RouterErrorPage,
   OrganizationsAdminPage,
   CaseTypesAdminPage,
@@ -35,6 +30,10 @@ import {
 import { ADMIN_PAGE_CATEGORY } from '../models';
 import { UsersAdminPage } from '../pages/UsersAdminPage';
 import type { MyNonIndexRouteObject } from '../models';
+import {
+  CommandName,
+  PermissionType,
+} from '../api';
 
 export const adminRoutes: MyNonIndexRouteObject[] = [
   // USERS_AND_ORGANIZATIONS

@@ -11,16 +11,6 @@ import {
 } from 'yup';
 import omit from 'lodash/omit';
 
-import type {
-  CaseTypeSet,
-  Permission,
-} from '@gen_epix/api';
-import {
-  CommandName,
-  PermissionType,
-  CaseApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -40,6 +30,15 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type {
+  CaseTypeSet,
+  Permission,
+} from '../../api';
+import {
+  CaseApi,
+  CommandName,
+  PermissionType,
+} from '../../api';
 
 interface TableData extends CaseTypeSet {
   caseTypeIds?: string[];

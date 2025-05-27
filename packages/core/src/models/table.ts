@@ -6,9 +6,9 @@ import type { ReactElement } from 'react';
 import type { TFunction } from 'i18next';
 
 import type {
-  CaseTypeCol,
   CompleteCaseType,
-} from '@gen_epix/api';
+  CaseTypeCol,
+} from '../api';
 
 import type { CaseTypeRowValue } from './epi';
 import type { OptionBase } from './form';

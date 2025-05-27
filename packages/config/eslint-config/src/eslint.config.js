@@ -146,8 +146,8 @@ const jsRules = {
   'eslint-comments/disable-enable-pair': ['error', {
     allowWholeFile: true,
   }],
-  'eslint-comments/no-unused-disable': ['error'],
   'eslint-comments/no-unlimited-disable': ['error'],
+  'eslint-comments/no-unused-disable': ['error'],
 
   // plugin: prefer-arrow
   'prefer-arrow/prefer-arrow-functions': [
@@ -543,7 +543,7 @@ const configArray = [
   },
   {
     files: ['**/*.ts', '**/*.tsx'],
-    ignores: ['**/node_modules/**', '**/dist/**', '**/*.test.ts', '**/*.test.tsx', '**/test/setup.ts'],
+    ignores: ['**/node_modules/**', '**/dist/**', '**/*.test.ts', '**/*.test.tsx', '**/test/setup.ts', '**/src/api/**'],
     languageOptions: {
       parser: parserTS,
       parserOptions: {

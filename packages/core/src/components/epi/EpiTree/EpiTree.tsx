@@ -29,13 +29,6 @@ import { useStore } from 'zustand';
 import { useQuery } from '@tanstack/react-query';
 import { useDebouncedCallback } from 'use-debounce';
 
-import type {
-  GeneticDistanceProtocol,
-  RetrievePhylogeneticTreeRequestBody,
-  TreeAlgorithm,
-} from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import {
   Subject,
   TreeFilter,
@@ -73,6 +66,12 @@ import {
   useScrollbarSize,
   useSubscribable,
 } from '../../../hooks';
+import type {
+  RetrievePhylogeneticTreeRequestBody,
+  GeneticDistanceProtocol,
+  TreeAlgorithm,
+} from '../../../api';
+import { CaseApi } from '../../../api';
 
 type ZoomInMenuItemConfig = {
   caseIds?: string[];

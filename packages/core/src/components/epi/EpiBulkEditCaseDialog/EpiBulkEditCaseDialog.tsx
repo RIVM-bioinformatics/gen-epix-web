@@ -4,8 +4,6 @@ import {
 } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type { Case } from '@gen_epix/api';
-
 import {
   type WithDialogRenderProps,
   type WithDialogRefMethods,
@@ -13,6 +11,7 @@ import {
 } from '../../../hoc/withDialog';
 import { TestIdUtil } from '../../../utils';
 import type { DialogAction } from '../../ui';
+import type { Case } from '../../../api';
 
 export interface EpiBulkEditCaseDialogOpenProps {
   rows: Case[];

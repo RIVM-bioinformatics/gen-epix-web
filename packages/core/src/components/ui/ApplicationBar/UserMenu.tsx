@@ -20,11 +20,6 @@ import { useQuery } from '@tanstack/react-query';
 import { useAuth } from 'react-oidc-context';
 
 import {
-  LogLevel,
-  OrganizationApi,
-} from '@gen_epix/api';
-
-import {
   Confirmation,
   type ConfirmationRefMethods,
 } from '../Confirmation';
@@ -39,6 +34,10 @@ import {
   AuthorizationManager,
   LogManager,
 } from '../../../classes';
+import {
+  LogLevel,
+  OrganizationApi,
+} from '../../../api';
 
 type UserMenuProps = {
   readonly onClose: () => void;

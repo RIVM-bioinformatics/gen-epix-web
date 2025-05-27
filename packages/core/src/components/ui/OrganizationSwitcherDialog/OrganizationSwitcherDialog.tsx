@@ -21,8 +21,6 @@ import {
   string,
 } from 'yup';
 
-import { OrganizationApi } from '@gen_epix/api';
-
 import {
   withDialog,
   type WithDialogRefMethods,
@@ -37,6 +35,7 @@ import {
   NotificationManager,
   WindowManager,
 } from '../../../classes';
+import { OrganizationApi } from '../../../api';
 
 export interface OrganizationSwitcherDialogOpenProps {
   //

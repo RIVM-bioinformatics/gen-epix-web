@@ -5,9 +5,8 @@ import {
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
-import type { CaseSet } from '@gen_epix/api';
-
 import { MarkdownContent } from '../../ui';
+import type { CaseSet } from '../../../api';
 
 export type EpiCaseSetDescriptionProps = {
   readonly caseSet: CaseSet;

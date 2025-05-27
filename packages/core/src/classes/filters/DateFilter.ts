@@ -6,14 +6,13 @@ import {
   isEqual,
 } from 'date-fns';
 
-import type {
-  TypedDateRangeFilter,
-  TypedPartialDateRangeFilter,
-} from '@gen_epix/api';
-
 import type { FilterAbstractKwArgs } from '../abstracts';
 import { FilterAbstract } from '../abstracts';
 import type { Filter } from '../../models';
+import type {
+  TypedDateRangeFilter,
+  TypedPartialDateRangeFilter,
+} from '../../api';
 
 export interface DateFilterKwArgs extends FilterAbstractKwArgs {
   dateParser: (date: string) => Date;

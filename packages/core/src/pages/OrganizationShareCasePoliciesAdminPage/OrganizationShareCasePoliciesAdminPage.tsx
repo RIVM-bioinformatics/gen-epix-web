@@ -9,12 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type { OrganizationShareCasePolicy } from '@gen_epix/api';
-import {
-  AbacApi,
-  CommandName,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -36,6 +30,11 @@ import {
   QUERY_KEY,
 } from '../../models';
 import { useOrganizationCasePolicyNameFactory } from '../../hooks';
+import type { OrganizationShareCasePolicy } from '../../api';
+import {
+  AbacApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<
   OrganizationShareCasePolicy,

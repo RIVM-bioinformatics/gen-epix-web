@@ -12,13 +12,12 @@ import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns';
 import { useMemo } from 'react';
 
-import type { Case } from '@gen_epix/api';
-
 import {
   GenericErrorMessage,
   ResponseHandler,
 } from '../../ui';
 import { useDataCollectionsMap } from '../../../dataHooks';
+import type { Case } from '../../../api';
 
 export type EpiReadOnlyCaseContentProps = {
   readonly epiCase: Case;

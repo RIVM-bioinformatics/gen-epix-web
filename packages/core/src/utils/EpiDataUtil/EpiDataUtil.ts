@@ -1,8 +1,14 @@
 import difference from 'lodash/difference';
 import uniq from 'lodash/uniq';
 
+import { QUERY_KEY } from '../../models';
+import { EpiCaseTypeUtil } from '../EpiCaseTypeUtil';
+import { QueryUtil } from '../QueryUtil';
+import type { EpiData } from '../../models';
+import { QueryClientManager } from '../../classes';
 import type {
   CompleteCaseType,
+  TreeAlgorithm,
   RegionSet,
   Region,
   ConceptSet,
@@ -10,21 +16,14 @@ import type {
   Concept,
   Case,
   Organization,
-  TreeAlgorithm,
-} from '@gen_epix/api';
+} from '../../api';
 import {
   CaseApi,
-  DimType,
   GeoApi,
   OntologyApi,
   OrganizationApi,
-} from '@gen_epix/api';
-
-import { QUERY_KEY } from '../../models';
-import { EpiCaseTypeUtil } from '../EpiCaseTypeUtil';
-import { QueryUtil } from '../QueryUtil';
-import type { EpiData } from '../../models';
-import { QueryClientManager } from '../../classes';
+  DimType,
+} from '../../api';
 
 export class EpiDataUtil {
   public static readonly data: EpiData = {

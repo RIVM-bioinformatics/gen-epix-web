@@ -15,12 +15,6 @@ import {
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { useQuery } from '@tanstack/react-query';
 
-import type {
-  CaseSet,
-  CaseSetStat,
-} from '@gen_epix/api';
-import { CaseApi } from '@gen_epix/api';
-
 import CollectionIcon from '../../assets/icons/CollectionIcon.svg?react';
 import {
   TableUtil,
@@ -63,6 +57,11 @@ import {
   ConfigManager,
   RouterManager,
 } from '../../classes';
+import type {
+  CaseSet,
+  CaseSetStat,
+} from '../../api';
+import { CaseApi } from '../../api';
 
 type Row = CaseSet & CaseSetStat;
 

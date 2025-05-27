@@ -8,8 +8,6 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from 'react-oidc-context';
 import { useDebouncedCallback } from 'use-debounce';
 
-import { LogLevel } from '@gen_epix/api';
-
 import type { ConfirmationRefMethods } from '../Confirmation';
 import { Confirmation } from '../Confirmation';
 import { TimeUtil } from '../../../utils';
@@ -17,6 +15,7 @@ import {
   ConfigManager,
   LogManager,
 } from '../../../classes';
+import { LogLevel } from '../../../api';
 
 export const UserInactivityConfirmation = () => {
   const [t] = useTranslation();

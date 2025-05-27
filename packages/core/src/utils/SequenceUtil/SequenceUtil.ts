@@ -1,7 +1,7 @@
 import type {
-  Case,
   GeneticSequence,
-} from '@gen_epix/api';
+  Case,
+} from '../../api';
 
 export class SequenceUtil {
   public static createFastaContent(sequences: GeneticSequence[], cases: Case[]): string {

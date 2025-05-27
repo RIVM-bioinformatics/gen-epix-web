@@ -4,9 +4,8 @@ import {
   type UserManagerSettings,
 } from 'oidc-client-ts';
 
-import type { IdentityProvider } from '@gen_epix/api';
-
 import { WindowManager } from '../../classes';
+import type { IdentityProvider } from '../../api';
 
 export class UserManagerUtil {
   public static readonly userManager: UserManager;

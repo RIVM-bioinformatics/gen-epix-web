@@ -2,11 +2,6 @@
 import HomeIcon from '@mui/icons-material/Home';
 
 import {
-  CommandName,
-  PermissionType,
-} from '@gen_epix/api';
-
-import {
   RouterErrorPage,
   AcceptInvitationPage,
   PostLoginPage,
@@ -20,6 +15,10 @@ import {
   UploadPage,
 } from '../pages';
 import type { MyNonIndexRouteObject } from '../models';
+import {
+  CommandName,
+  PermissionType,
+} from '../api';
 
 import { RouterRoot } from './RouterRoot';
 import { adminRoutes } from './adminRoutes';

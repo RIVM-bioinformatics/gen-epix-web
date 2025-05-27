@@ -4,15 +4,14 @@ import {
   type InternalAxiosRequestConfig,
 } from 'axios';
 
-import type { LogItem } from '@gen_epix/api';
-import {
-  LogLevel,
-  SystemApi,
-} from '@gen_epix/api';
-
 import { AuthenticationManager } from '../AuthenticationManager';
 import { ConfigManager } from '../ConfigManager';
 import { StringUtil } from '../../../utils';
+import {
+  type LogItem,
+  LogLevel,
+} from '../../../api';
+import { SystemApi } from '../../../api';
 
 type LogManagerItem = {
   detail?: unknown;

@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { OauthFlowType } from '@gen_epix/api';
-
 import { translateOptions } from '../../hooks';
 import type {
   UseOptions,
   OptionBase,
 } from '../../models';
+import { OauthFlowType } from '../../api';
 
 export const oAuthFlowPresentationValues: Record<OauthFlowType, string> = {
   [OauthFlowType.AUTHORIZATION_CODE]: 'Authorization Code',

@@ -9,12 +9,6 @@ import {
   string,
 } from 'yup';
 
-import type { Region } from '@gen_epix/api';
-import {
-  CommandName,
-  GeoApi,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -30,6 +24,11 @@ import {
   QUERY_KEY,
 } from '../../models';
 import { useRegionSetOptions } from '../../dataHooks';
+import type { Region } from '../../api';
+import {
+  GeoApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<Region, 'name' | 'code' | 'region_set_id' | 'centroid_lat' | 'centroid_lon' | 'center_lat' | 'center_lon'>;
 

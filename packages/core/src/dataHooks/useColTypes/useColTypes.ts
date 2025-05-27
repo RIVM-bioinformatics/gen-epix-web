@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { ColType } from '@gen_epix/api';
-
 import { translateOptions } from '../../hooks';
 import type {
   UseOptions,
   OptionBase,
 } from '../../models';
+import { ColType } from '../../api';
 
 export const colTypePresentationValues: Record<ColType, string> = {
   [ColType.TEXT]: 'TEXT',

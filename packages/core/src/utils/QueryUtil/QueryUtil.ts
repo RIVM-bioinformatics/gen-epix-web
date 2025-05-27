@@ -2,14 +2,13 @@ import uniq from 'lodash/uniq';
 import remove from 'lodash/remove';
 import uniqBy from 'lodash/uniqBy';
 
-import type {
-  CaseQuery,
-  RetrievePhylogeneticTreeRequestBody,
-} from '@gen_epix/api';
-
 import { QUERY_KEY } from '../../models';
 import type { GenericData } from '../../models';
 import { QueryClientManager } from '../../classes';
+import type {
+  CaseQuery,
+  RetrievePhylogeneticTreeRequestBody,
+} from '../../api';
 
 export const queryKeyDependencies: Record<QUERY_KEY, QUERY_KEY[]> = {
   [QUERY_KEY.CASE_SET_CATEGORIES]: [],

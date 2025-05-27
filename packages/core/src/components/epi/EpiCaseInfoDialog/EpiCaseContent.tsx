@@ -18,9 +18,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useStore } from 'zustand';
 
-import type { Case } from '@gen_epix/api';
-import { ColType } from '@gen_epix/api';
-
 import {
   EpiCaseTypeUtil,
   EpiCaseUtil,
@@ -29,6 +26,8 @@ import { EpiStoreContext } from '../../../stores';
 import { GenericErrorMessage } from '../../ui';
 import type { EpiContactDetailsDialogRefMethods } from '../EpiContactDetailsDialog';
 import { EpiContactDetailsDialog } from '../EpiContactDetailsDialog';
+import type { Case } from '../../../api';
+import { ColType } from '../../../api';
 
 export type EpiCaseContentProps = {
   readonly epiCase: Case;

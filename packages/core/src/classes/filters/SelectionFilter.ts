@@ -1,13 +1,11 @@
 import { t } from 'i18next';
 
-import type {
-  FiltersInner,
-  Case,
-} from '@gen_epix/api';
-
-
 import { FilterAbstract } from '../abstracts';
 import type { Filter } from '../../models';
+import type {
+  Case,
+  FiltersInner,
+} from '../../api';
 
 export class SelectionFilter extends FilterAbstract<string[]> implements Filter<string[], string> {
   public initialFilterValue: string[] = [];

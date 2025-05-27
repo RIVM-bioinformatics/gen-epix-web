@@ -5,9 +5,8 @@ import {
   vi,
 } from 'vitest';
 
-import type { IdentityProvider } from '@gen_epix/api';
-
 import { WindowManager } from '../../classes';
+import type { IdentityProvider } from '../../api';
 
 import { UserManagerUtil } from './UserManagerUtil';
 

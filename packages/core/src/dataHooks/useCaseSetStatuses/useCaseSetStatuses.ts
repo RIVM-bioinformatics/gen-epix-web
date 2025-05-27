@@ -4,11 +4,6 @@ import {
   type UseQueryResult,
 } from '@tanstack/react-query';
 
-import {
-  CaseApi,
-  type CaseSetStatus,
-} from '@gen_epix/api';
-
 import type {
   UseMap,
   UseOptions,
@@ -18,6 +13,8 @@ import {
   QueryUtil,
 } from '../../utils';
 import { QUERY_KEY } from '../../models';
+import type { CaseSetStatus } from '../../api';
+import { CaseApi } from '../../api';
 
 export const useCaseSetStatuses = (): UseQueryResult<CaseSetStatus[]> => {
   return useQuery({

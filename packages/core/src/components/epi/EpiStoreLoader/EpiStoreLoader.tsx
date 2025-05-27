@@ -6,9 +6,6 @@ import {
 } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { CaseApi } from '@gen_epix/api';
-import type { CaseSet } from '@gen_epix/api';
-
 import { useItemQuery } from '../../../hooks';
 import { QUERY_KEY } from '../../../models';
 import {
@@ -16,6 +13,8 @@ import {
   EpiDataUtil,
 } from '../../../utils';
 import { ResponseHandler } from '../../ui';
+import type { CaseSet } from '../../../api';
+import { CaseApi } from '../../../api';
 
 import { EpiStoreLoaderContent } from './EpiStoreLoaderContent';
 

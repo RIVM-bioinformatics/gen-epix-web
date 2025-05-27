@@ -1,19 +1,18 @@
 import isNumber from 'lodash/isNumber';
 
-import {
-  ColType,
-  DimType,
-} from '@gen_epix/api';
-import type {
-  Dim,
-  CompleteCaseType,
-  CaseTypeCol,
-  Col,
-  CaseTypeDim,
-  CaseType,
-} from '@gen_epix/api';
-
 import { StringUtil } from '../StringUtil';
+import type {
+  CaseType,
+  CompleteCaseType,
+  Dim,
+  Col,
+  CaseTypeCol,
+  CaseTypeDim,
+} from '../../api';
+import {
+  DimType,
+  ColType,
+} from '../../api';
 
 export const SELECTION_FILTER_GROUP = 'selection';
 export const TREE_FILTER_GROUP = 'tree';

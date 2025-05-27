@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { TreeAlgorithmType } from '@gen_epix/api';
-
 import { translateOptions } from '../../hooks';
 import type {
   UseOptions,
   OptionBase,
 } from '../../models';
+import { TreeAlgorithmType } from '../../api';
 
 export const treeAlgorithmCodeValues: Record<TreeAlgorithmType, string> = {
   [TreeAlgorithmType.SLINK]: 'SLINK',

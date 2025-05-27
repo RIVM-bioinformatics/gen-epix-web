@@ -9,10 +9,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type { CompleteCaseType } from '@gen_epix/api';
-
 import { EpiTreeDescription } from '../EpiTreeDescription';
 import { EpiTreeUtil } from '../../../utils';
+import type { CompleteCaseType } from '../../../api';
 
 import { EpiCaseTypeInfoCaseTypeColumnAccessRights } from './EpiCaseTypeInfoCaseTypeColumnAccessRights';
 

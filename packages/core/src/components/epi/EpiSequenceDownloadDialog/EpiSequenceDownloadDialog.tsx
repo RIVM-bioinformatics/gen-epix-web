@@ -21,12 +21,6 @@ import {
 import noop from 'lodash/noop';
 
 import {
-  CaseApi,
-  ColType,
-  type Case,
-} from '@gen_epix/api';
-
-import {
   withDialog,
   type WithDialogRefMethods,
   type WithDialogRenderProps,
@@ -43,6 +37,11 @@ import {
   DataUrlUtil,
 } from '../../../utils';
 import { Autocomplete } from '../../form';
+import type { Case } from '../../../api';
+import {
+  ColType,
+  CaseApi,
+} from '../../../api';
 
 export interface EpiSequenceDownloadDialogOpenProps {
   cases: Case[];

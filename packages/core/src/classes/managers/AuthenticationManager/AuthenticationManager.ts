@@ -2,8 +2,6 @@ import 'reflect-metadata';
 import type { InternalAxiosRequestConfig } from 'axios';
 import type { AuthContextProps } from 'react-oidc-context';
 
-import type { IdentityProvider } from '@gen_epix/api';
-
 import { AuthorizationManager } from '../AuthorizationManager';
 import { WindowManager } from '../WindowManager';
 import { userProfileStore } from '../../../stores';
@@ -11,6 +9,7 @@ import { AxiosUtil } from '../../../utils';
 import { SubscribableAbstract } from '../../abstracts';
 import { Subject } from '../../Subject';
 import type { AuthState } from '../../../models';
+import type { IdentityProvider } from '../../../api';
 
 export const createdAtMetaDataKey = Symbol('createdAt');
 

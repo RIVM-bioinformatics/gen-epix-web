@@ -8,12 +8,6 @@ import {
   string,
 } from 'yup';
 
-import type { EtiologicalAgent } from '@gen_epix/api';
-import {
-  OntologyApi,
-  CommandName,
-} from '@gen_epix/api';
-
 import {
   TableUtil,
   TestIdUtil,
@@ -27,6 +21,11 @@ import {
   FORM_FIELD_DEFINITION_TYPE,
   QUERY_KEY,
 } from '../../models';
+import type { EtiologicalAgent } from '../../api';
+import {
+  OntologyApi,
+  CommandName,
+} from '../../api';
 
 type FormFields = Pick<EtiologicalAgent, 'name' | 'type'>;
 

@@ -12,8 +12,6 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns';
 
-import type { CaseSet } from '@gen_epix/api';
-
 import {
   useCaseSetCategoryMap,
   useCaseSetStatusMap,
@@ -21,6 +19,7 @@ import {
 } from '../../../dataHooks';
 import { ResponseHandler } from '../../ui';
 import { useEpiCaseAbacContext } from '../../../context/epiCaseAbac';
+import type { CaseSet } from '../../../api';
 
 export type EpiCaseSetContentProps = {
   readonly caseSet: CaseSet;

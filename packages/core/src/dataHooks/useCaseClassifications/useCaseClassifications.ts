@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { CaseClassification } from '@gen_epix/api';
-
 import { translateOptions } from '../../hooks';
 import type {
   UseOptions,
   OptionBase,
 } from '../../models';
+import { CaseClassification } from '../../api';
 
 export const caseClassificationPresentationValues: Record<CaseClassification, string> = {
   [CaseClassification.POSSIBLE]: 'Possible',

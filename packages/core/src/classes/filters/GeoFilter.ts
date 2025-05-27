@@ -1,13 +1,12 @@
 import isArray from 'lodash/isArray';
 
-import type { TypedStringSetFilter } from '@gen_epix/api';
-
 import type {
   AutoCompleteOption,
   Filter,
 } from '../../models';
 import type { FilterAbstractKwArgs } from '../abstracts';
 import { FilterAbstract } from '../abstracts';
+import type { TypedStringSetFilter } from '../../api';
 
 export interface GeoFilterKwArgs extends FilterAbstractKwArgs {
   options: AutoCompleteOption[];

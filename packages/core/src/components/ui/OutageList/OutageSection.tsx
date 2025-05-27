@@ -4,7 +4,7 @@ import {
   Box,
 } from '@mui/material';
 
-import type { Outage } from '@gen_epix/api';
+import type { Outage } from '../../../api';
 
 import { OutageItem } from './OutageItem';
 
