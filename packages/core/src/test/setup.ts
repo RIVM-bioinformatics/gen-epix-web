@@ -12,10 +12,6 @@ global.TextDecoder = TextDecoder;
 
 setup();
 
-vi.mock('@mui/icons-material', () => ({
-  //
-}));
-
 vi.setConfig({
   testTimeout: 10000,
 });
