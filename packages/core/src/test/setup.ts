@@ -1,19 +1,16 @@
-import '@testing-library/jest-dom/vitest';
-
 import {
   beforeAll,
   vi,
 } from 'vitest';
-import { config as transitionConfig } from 'react-transition-group';
-import '../setup/i18next';
-import '../setup/yup';
-import { cleanup } from '@testing-library/react';
 
 import type { Config } from '../models';
 import { ConfigManager } from '../classes';
+import { setup } from '../setup';
 
 global.TextEncoder = TextEncoder;
 global.TextDecoder = TextDecoder;
+
+setup();
 
 vi.mock('@mui/icons-material', () => ({
   //
@@ -38,9 +35,3 @@ beforeAll(() => {
     },
   } as Config;
 });
-
-afterEach(() => {
-  cleanup();
-});
-
-transitionConfig.disabled = true;

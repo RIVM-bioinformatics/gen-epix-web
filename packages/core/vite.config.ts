@@ -1,10 +1,11 @@
+/// <reference types="vitest" />
+
 import { resolve } from 'path';
 
 import react from '@vitejs/plugin-react-swc';
 import svgr from 'vite-plugin-svgr';
 import dts from 'vite-plugin-dts';
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
-import type { UserConfig as UserConfigVitest } from 'vitest/node';
 import type { UserConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
@@ -54,4 +55,4 @@ export default {
     setupFiles: ['./src/test/setup.ts'],
     testTimeout: 5000,
   },
-} satisfies UserConfig & { test: UserConfigVitest };
+} satisfies UserConfig;
